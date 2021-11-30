@@ -51,7 +51,7 @@ RUN mkdir -p /run/postgresql \
 
 # Copy over the tools
 COPY --from=tools /go/bin/* /usr/local/bin/
-
+RUN pg_config --version
 # --------------------------------------
 # Build TimescaleDB 2.1.0
 # --------------------------------------
