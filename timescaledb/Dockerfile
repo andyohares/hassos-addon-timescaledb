@@ -38,7 +38,7 @@ FROM $BUILD_FROM
 # --------------------------------------
 # Add PostgreSql 13.2
 # --------------------------------------
-ENV POSTGRES_VERSION=14.1-r3
+ENV POSTGRES_VERSION=14.1-r4
 RUN apk add --no-cache \
     postgresql14=${POSTGRES_VERSION} \
     postgresql14-dev=${POSTGRES_VERSION}
