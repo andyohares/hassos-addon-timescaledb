@@ -4,7 +4,7 @@ ARG BUILD_ARCH=aarch64
 ###########################################
 # Build TimeScaleDB tools binaries in separate image
 ###########################################
-ARG GO_VERSION=1.14.0
+ARG GO_VERSION=1.16.0
 FROM --platform=${BUILD_ARCH} golang:${GO_VERSION}-alpine AS tools
 
 ENV TOOLS_VERSION 0.8.1
@@ -56,7 +56,7 @@ RUN pg_config --version
 # Build TimescaleDB 2.1.0
 # --------------------------------------
 # Fix versions
-ENV TIMESCALEDB_VERSION 2.4.0
+ENV TIMESCALEDB_VERSION 2.5.0
 # Enable this if you only want the OSS parts
 #ENV OSS_ONLY -DAPACHE_ONLY=1
 RUN set -ex \
