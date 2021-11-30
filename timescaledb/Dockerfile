@@ -56,7 +56,7 @@ COPY --from=tools /go/bin/* /usr/local/bin/
 # Build TimescaleDB 2.1.0
 # --------------------------------------
 # Fix versions
-ENV TIMESCALEDB_VERSION 2.5.0
+ENV TIMESCALEDB_VERSION 2.4.2
 # Enable this if you only want the OSS parts
 #ENV OSS_ONLY -DAPACHE_ONLY=1
 RUN set -ex \
