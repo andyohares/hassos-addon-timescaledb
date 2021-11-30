@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/aarch64:9.1.5
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/aarch64:11.0.0
 ARG BUILD_ARCH=aarch64
 
 ###########################################
