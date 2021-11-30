@@ -40,8 +40,8 @@ FROM $BUILD_FROM
 # --------------------------------------
 ENV POSTGRES_VERSION=13.5-r0
 RUN apk add --no-cache \
-    postgresql13=${POSTGRES_VERSION} \
-    postgresql13-dev=${POSTGRES_VERSION}
+    postgresql13-13.5-r0 \
+    postgresql13-dev-13.5-r0
 
 # Create it's run directory
 RUN mkdir -p /run/postgresql \
